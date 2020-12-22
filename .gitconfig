@@ -1,0 +1,19 @@
+[user]
+	email = jaseung.ku@gmail.com
+	name = Jaseung Ku
+[color]
+	ui = auto
+[alias]
+	l = log --graph --oneline --all --decorate
+	st = status
+	co = checkout
+	br = branch
+[pager]
+	branch = false
+[core]
+	pager = cat
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
