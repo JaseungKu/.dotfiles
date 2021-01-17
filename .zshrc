@@ -118,7 +118,7 @@ alias tree='tree -C'
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval `dircolors ~/.dir_colors`
 
-export PATH=/home/jaseung/scripts/:$PATH
+export PATH=/home/jaseung/scripts/:/home/jaseung/Documents/fasthenry-3.0wr-110915/fasthenry-3.0wr/bin:$PATH
 neofetch
 
 alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
