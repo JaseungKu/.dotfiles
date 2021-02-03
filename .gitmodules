@@ -1,0 +1,20 @@
+[submodule "agnoster-zsh-theme"]
+	path = agnoster-zsh-theme
+	url = https://github.com/agnoster/agnoster-zsh-theme.git
+	branch = master
+[submodule "powerlevel10k"]
+	path = powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+	branch = master
+[submodule ".zsh/themes/powerlevel10k"]
+	path = .zsh/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+	branch = master
+[submodule ".zsh/plugins/zsh-colored-man-pages"]
+	path = .zsh/plugins/zsh-colored-man-pages
+	url = https://github.com/ael-code/zsh-colored-man-pages.git
+	branch = master
+[submodule ".zsh/plugins/zsh-autosuggestions"]
+	path = .zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+	branch = master
