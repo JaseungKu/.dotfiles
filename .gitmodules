@@ -18,3 +18,15 @@
 	path = .zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 	branch = master
+[submodule ".zsh/plugins/autojump"]
+	path = .zsh/plugins/autojump
+	url = https://github.com/wting/autojump.git
+	branch = master
+[submodule "autojump"]
+	path = autojump
+	url = https://github.com/wting/autojump.git
+	branch = master
+[submodule ".zsh/plugins/auto-ls"]
+	path = .zsh/plugins/auto-ls
+	url = https://github.com/desyncr/auto-ls.git
+	branch = master

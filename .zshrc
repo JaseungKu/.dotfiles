@@ -55,26 +55,33 @@ alias la='ls -a'
 alias rm='rm -i'
 alias tree='tree -C'
 alias so='source'
+alias vz='vim ~/.zshrc'
 
 alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+alias gst='git status'
+alias gco='git checkout'
+alias gc='git commit'
 
 eval `dircolors ~/.dir_colors`
 
 export PATH=/home/jaseung/scripts/:/home/jaseung/Documents/fasthenry-3.0wr-110915/fasthenry-3.0wr/bin:$PATH
 
-DEFAULT_USER=`whoami` 
+#DEFAULT_USER=`whoami` 
 
-neofetch
+#neofetch
 
 # zsh theme 
-#setopt promptsubst   # make prompt to work propery in agonoster theme.
-#source ~/agnoster-zsh-theme/agnoster.zsh-theme
 source ~/.zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 # zsh plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/plugins/zsh-colored-man-pages/colored-man-pages.plugin.zsh
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source ~/.zsh/plugins/auto-ls/auto-ls.plugin.zsh
+
+# autojump
+. /usr/share/autojump/autojump.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
