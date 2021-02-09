@@ -47,7 +47,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # Here comes custom part
 
 # custom alias
-alias cl='clear'
+alias cl='clear && ls'
 alias ls='ls -XF --color=always --group-directories-first'
 alias ld='ls -d */'
 alias ll='ls -lh'
@@ -56,6 +56,7 @@ alias rm='rm -i'
 alias tree='tree -C'
 alias so='source'
 alias vz='vim ~/.zshrc'
+alias cat='ccat'
 
 alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
