@@ -66,7 +66,9 @@ alias gc='git commit'
 
 eval `dircolors ~/.dir_colors`
 
-export PATH=/home/jaseung/scripts/:/home/jaseung/Documents/fasthenry-3.0wr-110915/fasthenry-3.0wr/bin:$PATH
+export PATH=$PATH:/home/jaseung/scripts/
+#:/home/jaseung/Documents/fasthenry-3.0wr-110915/fasthenry-3.0wr/bin:$PATH
+export MYVIMRC='/home/jaseung/.vimrc'
 
 #DEFAULT_USER=`whoami` 
 

@@ -1,34 +1,46 @@
+" .vimrc
 " Jaseung Ku
 
-" Basic Settings
-"
-" Indent Options
+" Python settings
 set autoindent
-set tabstop=4
+set tabstop=4		" how many spaces a tab takes up
+set shiftwidth=4	" controls the depth of autoindentation
+set expandtab		" convert all tabs to spaces
+set foldmethod=indent 	" Code folding options
 
-" Search Options
-set hlsearch
-set ignorecase
+filetype plugin indent on
+au FileType py set autoindent
+au FileType py set smartindent
+au FileType py set textwidth=79	" PEP-8 Friendly
+
+set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+
+syntax enable
+let python_highlight_all = 1	" enable all Python syntax highlightling feature
+
+" End of python settings
+
+" search options
+set hlsearch	" highlight all serach results
+set ignorecase  " do case insensitive search
+set incsearch	" show incremental search results
 set smartcase
 
-" Text Rendering Options
+set noswapfile	" disable swap file
+
+" Text rendering options
 set encoding=utf-8
 set wrap 
-"set spell spelllang=en_us
-syntax enable
 
-" User Interface Options
+" User interface options
 set wildmenu
 set number
-set relativenumber
-set showmatch
+"set relativenumber
+set showmatch 	" show the maching part of the pair fo []  {} and ()
 set showcmd
 set clipboard=unnamedplus
 
-" Code Folding Options
-"set foldmethod=indent
-
-" remap keys
+"""  remap keys """ 
 inoremap jk <esc>
 
 let mapleader = " "  " map leader key
@@ -36,10 +48,15 @@ nnoremap <CR> :noh<CR><CR>
 nnoremap <leader>ev :sp $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+""" end of remap keys
+
 "call plug#begin('~/.vim/plugged')
-"Plug 'preservim/nerdtree'    "file tree
 "Plug 'davidhalter/jedi-vim'  "autocomplete
-"Plug 'sheerun/vim-polyglot'  "language packs
 "call plug#end()
 
 " I'm using Vim's naive package manangement.
