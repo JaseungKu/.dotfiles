@@ -1,6 +1,5 @@
 " .vimrc
 " Jaseung Ku
-
 " Python settings
 set autoindent
 set tabstop=4		" how many spaces a tab takes up

@@ -54,3 +54,11 @@
 	path = .vim/pack/jedi-vim
 	url = http://github.com/davidhalter/jedi-vim
 	branch = master
+[submodule "/home/jaseung/.vim/jedi-vim"]
+	path = /home/jaseung/.vim/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+	branch = master
+[submodule "/home/jaseung/.vim/plugged/jedi-vim"]
+	path = /home/jaseung/.vim/plugged/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+	branch = master
