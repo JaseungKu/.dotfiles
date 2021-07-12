@@ -44,10 +44,10 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# Here comes custom part
+############# Here comes custom part ###################
 
 # custom alias
-alias cl='clear && ls'
+alias cl='clear'
 alias ls='ls -XF --color=always --group-directories-first'
 alias ld='ls -d */'
 alias ll='ls -lh'
@@ -56,6 +56,7 @@ alias rm='rm -i'
 alias tree='tree -C'
 alias so='source'
 alias vz='vim ~/.zshrc'
+alias vv='vim ~/.vimrc'
 alias cat='ccat'
 
 alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -67,9 +68,12 @@ alias gc='git commit'
 eval `dircolors ~/.dir_colors`
 
 export PATH=$PATH:/home/jaseung/scripts/
+export PATH=$PATH:/usr/local/xictools/bin
 #:/home/jaseung/Documents/fasthenry-3.0wr-110915/fasthenry-3.0wr/bin:$PATH
 export MYVIMRC='/home/jaseung/.vimrc'
-
+export LIBGL_ALWAYS_SOFTWARE=1 
+export PATH=$PATH:/home/jaseung/JoSIM/build/
+export PATH=$PATH:/home/jaseung/JoSIM/scripts/
 #DEFAULT_USER=`whoami` 
 
 #neofetch
@@ -81,7 +85,7 @@ source ~/.zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/plugins/zsh-colored-man-pages/colored-man-pages.plugin.zsh
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source ~/.zsh/plugins/auto-ls/auto-ls.plugin.zsh
+#source ~/.zsh/plugins/auto-ls/auto-ls.plugin.zsh
 
 # autojump
 . /usr/share/autojump/autojump.sh
