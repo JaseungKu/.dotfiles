@@ -60,6 +60,7 @@ alias vv='vim ~/.vimrc'
 alias cat='ccat'
 
 alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias gd='git-dotfiles'
 
 alias gst='git status'
 alias gco='git checkout'

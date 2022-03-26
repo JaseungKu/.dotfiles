@@ -134,3 +134,24 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+#aliases
+alias cl='clear'
+alias ls='ls -XF --color=always --group-directories-first'
+alias ld='ls -d */'
+alias ll='ls -lh'
+alias la='ls -a'
+alias rm='rm -i'
+alias tree='tree -C'
+alias so='source'
+alias vz='vim ~/.zshrc'
+alias vv='vim ~/.vimrc'
+alias cat='ccat'
+
+alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+git-dotfiles config --local status.showUntrackedFiles no
+alias gd='git-dotfiles'
+
+alias gst='git status'
+alias gco='git checkout'
+alias gc='git commit'
+
