@@ -89,7 +89,7 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 #source ~/.zsh/plugins/auto-ls/auto-ls.plugin.zsh
 
 # autojump
-. /usr/share/autojump/autojump.sh
+#. /usr/share/autojump/autojump.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
