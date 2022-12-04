@@ -57,7 +57,7 @@ alias tree='tree -C'
 alias so='source'
 alias vz='vim ~/.zshrc'
 alias vv='vim ~/.vimrc'
-alias cat='ccat'
+#alias cat='ccat'
 
 alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias gd='git-dotfiles'
@@ -65,6 +65,8 @@ alias gd='git-dotfiles'
 alias gst='git status'
 alias gco='git checkout'
 alias gc='git commit'
+
+alias spyder='export LD_PRELOAD=/usr/lib64/libstdc++.so.6 && spyder'
 
 eval `dircolors ~/.dir_colors`
 
@@ -83,7 +85,7 @@ export PATH=$PATH:/home/jaseung/JoSIM/scripts/
 source ~/.zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 # zsh plugins
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/plugins/zsh-colored-man-pages/colored-man-pages.plugin.zsh
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 #source ~/.zsh/plugins/auto-ls/auto-ls.plugin.zsh
